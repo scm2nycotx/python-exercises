@@ -1,1 +1,3 @@
-# python-exercises
+# Python Exercises
+
+test shortcut
