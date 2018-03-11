@@ -46,6 +46,47 @@ else:
 totalAmount = totalBillAmount + tipAmount
 print("Total amount: {}".format(round(totalAmount, 2)))
 
+#8. Tip Calculator 2
+totalBillAmount = float(input("Total bill amount? "))
+serviceLevel = input("Level of service? Good, fair, or bad? ").lower()
+splitWays = input("Split how many ways? ")
+if serviceLevel == "good":
+    tipAmount = totalBillAmount * 0.2
+    print("Tip amount: {}".format(round(tipAmount, 2)))
+elif serviceLevel == "fair":
+    tipAmount = totalBillAmount * 0.15
+    print("Tip amount: {}".format(round(tipAmount, 2)))
+else:
+    tipAmount = totalBillAmount * 0.1
+    print("Tip amount: {}".format(round(tipAmount, 2)))
+totalAmount = totalBillAmount + tipAmount
+print("Total amount: {}".format(round(totalAmount, 2)))
+amountPerPerson = totalAmount / int(splitWays) 
+print("Amount per person: {}".format(round(amountPerPerson, 2)))
+
+#9. 1 to 10
+count = 0
+while count < 10:
+  count += 1
+  print("The count is: ", count)
+
+#10. How many coins?
+print("You have 0 coins now.")
+count = 0
+while True:
+    answer = input("Do you want another? ")
+    if answer.lower() == "yes":
+       count += 1
+       print("You have {} coins".format(count))
+    if answer.lower() == "no":
+       count += 1
+       break
+print("See you next time!")
+        
+    
+
+    
+  
 
 
 
