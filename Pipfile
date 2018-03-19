@@ -9,6 +9,7 @@ name = "pypi"
 
 ipython = "*"
 matplotlib = "*"
+numpy = "*"
 
 
 [dev-packages]

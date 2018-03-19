@@ -62,7 +62,7 @@ triangle(4, 7)
 #7b. (worked)
 def pyramid(height):
     for k in range(1, height + 1):
-        rows = (height - (k - 1)) * " " + (k - 1) * "*" + "*" + (k - 1) * "*" 
+        rows = (height - (k - 1)) * " " + (k - 1) * "*" + "*" + (k - 1) * "*"
         print (rows)
 
 pyramid(4)
