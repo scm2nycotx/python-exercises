@@ -94,31 +94,31 @@ plot.savefig("function_ex7_plot.png")
 plot.close()
 
 #8. Play again?
-def playAgain(x):
-    answer = input("Do you want to play again (Y or N)? ")
-    if answer == "Y":
-        return True
-    else:
-        return False
-
-playAgain(x)
+def playAgain():
+    while True:
+        answer = input("Do you want to play again (Y or N)? ")
+        if answer == "Y":
+            return True
+        else:
+            return False
+if __name__ == "__main__":
+    playAgain()
 
 #9. Play again? Again.
-def playAgain2(x):
-    answer2 = input("Do you want to play again (Y or N)? ")
-    if answer2 == "Y":
-        return True
-    elif answer2 == "N":
-        return False
-    else:
-        answer3 = input("Invalid input, try again (Y or N)? ")
-        if answer3 == "Y":
+def playAgain2():
+    while True:
+        answer2 = input("Do you want to play again (Y or N)? ")
+        if answer2 == "Y":
             return True
-        elif answer3 == "N":
+        elif answer2 == "N":
             return False
+        else:
+            print("Invalid input, try again (Y or N) later! ")
             
-playAgain2(x)
-
+if __name__ == "__main__":
+    playAgain2()
+    
+    
 
 
 
